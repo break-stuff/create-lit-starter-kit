@@ -1,0 +1,37 @@
+{
+  "name": "create-lit-starter-kit",
+  "version": "1.0.0",
+  "description": "A tool for scaffolding out a lit component library",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && rollup -c",
+    "deploy": "npm run build && npm publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Burton Smith <burton@breakstuff.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.1",
+    "@rollup/plugin-json": "^6.1.0",
+    "@types/node": "^22.10.1",
+    "rollup": "^4.28.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "colorette": "^2.0.20",
+    "download-git-repo": "^3.0.2"
+  },
+  "bin": {
+    "create-lit-starter-kit": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/break-stuff/create-lit-starter-kit"
+  },
+  "homepage": "https://github.com/break-stuff/create-lit-starter-kit#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false
+}
